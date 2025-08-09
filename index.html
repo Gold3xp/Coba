@@ -1,24 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="user-scalable=false, initial-scale=1.0, maximum-scale=1.0" />
-  <title>Choose & Enjoy - Hot Girls</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thumbnail Video Interaktif</title>
+  <style>
+    body {
+      background-color: #111;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-  <!-- Meta Open Graph untuk Facebook Preview -->
-  <meta property="og:title" content="Choose & Enjoy - Hot Girls" />
-  <meta property="og:description" content="This website is free. Click the link below to continue." />
-  <meta property="og:image" content="https://cdn-adef.akamaized.net/landings/178004/1575471931/images/snapchat_sex.png" />
-  <meta property="og:url" content="https://yourdomain.com/yourpage.html" />
-  <meta property="og:type" content="website" />
+    .card {
+      background-color: #222;
+      border-radius: 15px;
+      overflow: hidden;
+      width: 320px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+    }
 
-  <!-- (Opsional) Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Choose & Enjoy - Hot Girls" />
-  <meta name="twitter:description" content="This website is free. Click the link below to continue." />
-  <meta name="twitter:image" content="https://cdn-adef.akamaized.net/landings/178004/1575471931/images/snapchat_sex.png" />
-  
-  <!-- Link favicon dan CSS seperti semula -->
-  <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" href="/landings/178004/1575471931/css/css.css?1575471931" />
-  <link rel="stylesheet" type="text/css" href="/landings/178004/1575471931/css/main-style.css?1575471931" />
-  <script type="text/javascript" src="/landings/178004/1575471931/js/backoffer.js?1575471931"></script>
+    .thumbnail {
+      width: 100%;
+      aspect-ratio: 640 / 360;
+      background: #000;
+      position: relative;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .card-footer {
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      user-select: none;
+    }
+
+    .btn {
+      background-color: #444;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      flex-shrink: 0;
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+
+    .btn:hover {
+      background-color: #666;
+    }
+  </style>
 </head>
+<body>
+
+  <div class="card">
+    <div class="thumbnail">
+      <iframe 
+        src="https://player.cloudinary.com/embed/?cloud_name=dkkmrbcih&public_id=harrysud_7277734809516952837_ofczjj&profile=cld-default"
+        allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="card-footer">
+      <div class="title">Full Video💘</div>
+      <button class="btn" id="nextBtn">Tonton Lainnya</button>
+    </div>
+  </div>
+
+  <script>
+    const directLink = "https://player.cloudinary.com/embed/?cloud_name=dkkmrbcih&public_id=harrysud_7277734809516952837_ofczjj&profile=cld-default";
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      window.open(directLink, '_blank');
+    });
+  </script>
+
+</body>
+  </html>
